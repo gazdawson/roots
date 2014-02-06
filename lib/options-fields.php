@@ -1,6 +1,6 @@
 <?php
 /**
- * Krank Option Feilds
+ * Krank Option Fields
  * @package Krank
  * Docs (https://github.com/ReduxFramework/ReduxFramework/wiki)
 */

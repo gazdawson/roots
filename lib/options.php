@@ -244,7 +244,7 @@ if ( !class_exists( "Redux_Framework_sample_config" ) ) {
 			/**
 			 Krank Redux Option Fields
 			**/
-			require_once ('krank-options.php');
+			require_once ('options-fields.php');
 
 			if(file_exists(trailingslashit(dirname(__FILE__)) . 'README.html')) {
 			    $tabs['docs'] = array(
@@ -295,8 +295,8 @@ if ( !class_exists( "Redux_Framework_sample_config" ) ) {
 				'display_version'		=> $theme->get('Version'), // Version that appears at the top of your panel
 				'menu_type'          	=> 'menu', //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
 				'allow_sub_menu'     	=> true, // Show the sections below the admin menu item or not
-				'menu_title'			=> __( 'Sample Options', 'redux-framework-demo' ),
-	            'page'		 	 		=> __( 'Sample Options', 'redux-framework-demo' ),
+				'menu_title'			=> __( 'Krank Options', 'redux-framework-demo' ),
+	            'page'		 	 		=> __( 'Krank Options', 'redux-framework-demo' ),
 	            'google_api_key'   	 	=> '', // Must be defined to add google fonts to the typography module
 	            'global_variable'    	=> '', // Set a different name for your global variable other than the opt_name
 	            'dev_mode'           	=> true, // Show the time the page took to load, etc
@@ -309,7 +309,7 @@ if ( !class_exists( "Redux_Framework_sample_config" ) ) {
 	            'menu_icon'          	=> '', // Specify a custom URL to an icon
 	            'last_tab'           	=> '', // Force your panel to always open to a specific tab (by id)
 	            'page_icon'          	=> 'icon-themes', // Icon displayed in the admin panel next to your menu_title
-	            'page_slug'          	=> '_options', // Page slug used to denote the panel
+	            'page_slug'          	=> 'krank_options', // Page slug used to denote the panel
 	            'save_defaults'      	=> true, // On load save the defaults to DB before user clicks save or not
 	            'default_show'       	=> false, // If true, shows the default value next to each field that is not the default value.
 	            'default_mark'       	=> '', // What to print by the field's title if the value shown is default. Suggested: *
@@ -317,8 +317,8 @@ if ( !class_exists( "Redux_Framework_sample_config" ) ) {
 
 	            // CAREFUL -> These options are for advanced use only
 	            'transient_time' 	 	=> 60 * MINUTE_IN_SECONDS,
-	            'output'            	=> true, // Global shut-off for dynamic CSS output by the framework. Will also disable google fonts output
-	            'output_tag'            	=> true, // Allows dynamic CSS to be generated for customizer and google fonts, but stops the dynamic CSS from going to the head
+	            'output'            	=> false, // Global shut-off for dynamic CSS output by the framework. Will also disable google fonts output
+	            'output_tag'            	=> false, // Allows dynamic CSS to be generated for customizer and google fonts, but stops the dynamic CSS from going to the head
 	            //'domain'             	=> 'redux-framework', // Translation domain key. Don't change this unless you want to retranslate all of Redux.
 	            //'footer_credit'      	=> '', // Disable the footer credit of Redux. Please leave if you can help it.
 	            
