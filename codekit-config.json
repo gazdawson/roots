@@ -28,9 +28,9 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/screenshot.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/screenshot.png",
-      "initialSize" : 3672,
+      "initialSize" : 23018,
       "fileType" : 8192
     },
     "\/assets\/less\/bootstrap\/utilities.less" : {
@@ -131,6 +131,26 @@
       "outputAbbreviatedPath" : "\/assets\/js\/plugins\/bootstrap\/carousel.min.js",
       "fileType" : 64
     },
+    "\/lib\/activation.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/activation.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/assets\/js\/plugins\/bootstrap\/collapse.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/js\/plugins\/bootstrap\/collapse.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/plugins\/bootstrap\/collapse.min.js",
+      "fileType" : 64
+    },
     "\/assets\/less\/bootstrap\/carousel.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/carousel.less",
@@ -147,26 +167,6 @@
       "outputStyle" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/assets\/js\/plugins\/bootstrap\/collapse.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/plugins\/bootstrap\/collapse.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/plugins\/bootstrap\/collapse.min.js",
-      "fileType" : 64
-    },
-    "\/lib\/activation.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/activation.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/assets\/less\/bootstrap\/grid.less" : {
       "ieCompatibility" : 1,
@@ -369,22 +369,16 @@
       "outputAbbreviatedPath" : "\/assets\/js\/scripts.min.min.js",
       "fileType" : 64
     },
-    "\/assets\/less\/bootstrap\/dropdowns.less" : {
-      "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/dropdowns.less",
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/dropdowns.css",
-      "outputPathIsSetByUser" : 0,
-      "strictUnits" : 0,
-      "relativeURLS" : 0,
-      "ignore" : 1,
-      "strictImports" : 0,
+    "\/assets\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
-      "shouldRunBless" : 0,
+      "ignore" : 1,
       "hidden" : 0,
-      "strictMath" : 0,
-      "outputStyle" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/js\/main.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/main.min.js",
+      "fileType" : 64
     },
     "\/lib\/gallery.php" : {
       "ignoreWasSetByUser" : 0,
@@ -441,25 +435,22 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/js\/main.js" : {
-      "ignoreWasSetByUser" : 0,
+    "\/assets\/less\/bootstrap\/dropdowns.less" : {
+      "ieCompatibility" : 1,
+      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/dropdowns.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/dropdowns.css",
+      "outputPathIsSetByUser" : 0,
+      "strictUnits" : 0,
+      "relativeURLS" : 0,
       "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/main.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/main.min.js",
-      "fileType" : 64
-    },
-    "\/lib\/cleanup.php" : {
+      "strictImports" : 0,
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "shouldRunBless" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/cleanup.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "strictMath" : 0,
+      "outputStyle" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/templates\/head.php" : {
       "ignoreWasSetByUser" : 0,
@@ -467,6 +458,15 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/templates\/head.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/lib\/cleanup.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/cleanup.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -757,12 +757,12 @@
       "outputAbbreviatedPath" : "\/assets\/js\/plugins\/bootstrap\/button.min.js",
       "fileType" : 64
     },
-    "\/lib\/nav.php" : {
+    "\/index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/nav.php",
+      "inputAbbreviatedPath" : "\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -803,12 +803,21 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/index.php" : {
+    "\/lib\/nav.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
+      "inputAbbreviatedPath" : "\/lib\/nav.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/template-custom.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/template-custom.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -828,15 +837,6 @@
       "outputStyle" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/template-custom.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/template-custom.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/page.php" : {
       "ignoreWasSetByUser" : 0,
@@ -1110,10 +1110,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/less\/bootstrap\/badges.less" : {
+    "\/assets\/less\/bootstrap\/jumbotron.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/badges.less",
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/badges.css",
+      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/jumbotron.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/jumbotron.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -1153,10 +1153,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/less\/bootstrap\/jumbotron.less" : {
+    "\/assets\/less\/bootstrap\/breadcrumbs.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/jumbotron.less",
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/jumbotron.css",
+      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/breadcrumbs.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/breadcrumbs.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
@@ -1170,10 +1170,10 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/less\/bootstrap\/breadcrumbs.less" : {
+    "\/assets\/less\/bootstrap\/badges.less" : {
       "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/breadcrumbs.less",
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/breadcrumbs.css",
+      "inputAbbreviatedPath" : "\/assets\/less\/bootstrap\/badges.less",
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/badges.css",
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
