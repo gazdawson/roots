@@ -1,25 +1,3 @@
-// Krank Scripts
-
-$(document).ready(function(){
-	
-	// Contact form info messaging
-	var cf_info = $('div.contact-form-info').text();
-	var cf_class = $('div.contact-form-info').attr('class');
-	if(cf_class === 'contact-form-info error') {
-		var cf_alert = '<div class="'+cf_class+' container"><i class="fa fa-info-circle"></i> '+cf_info+'<button class="close">&times;</button></div>';
-	}
-	else {
-		var cf_alert = '<div class="'+cf_class+' container"><i class="fa fa-check"></i> '+cf_info+'<button class="close">&times;</button></div>';
-	}
-	if(cf_info !== '') {
-		$('body').prepend(cf_alert).hide().slideDown();
-	}
-	$('div.contact-form-info .close').on('click',function(){
-		$('div.contact-form-info').slideUp().fadeOut('fast');
-	});
-	
-});
-
 /* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
@@ -40,18 +18,36 @@ $(document).ready(function(){
 
 // Use this variable to set up the common and page specific functions. If you 
 // rename this variable, you will also need to rename the namespace below.
-var Roots = {
+var Krank = {
   // All pages
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+	  
+	  	// Contact form info messaging
+	  	var cf_info = $('div.contact-form-info').text();
+	  	var cf_class = $('div.contact-form-info').attr('class');
+		
+	  	if(cf_class === 'contact-form-info error') {
+	  		var cf_alert = '<div class="'+cf_class+'"><i class="fa fa-info-circle"></i> '+cf_info+'<button class="close">&times;</button></div>';
+	  	}
+	  	else {
+	  		var cf_alert = '<div class="'+cf_class+'"><i class="fa fa-check"></i> '+cf_info+'<button class="close">&times;</button></div>';
+	  	}
+	  	if(cf_info !== '') {
+	  		$('.wrap').prepend(cf_alert);
+	  	}
+	  	$('div.contact-form-info .close').on('click',function(){
+	  		$('div.contact-form-info').slideUp().fadeOut('fast');
+	  	});
+	
     }
   },
   // Home page
   home: {
     init: function() {
       // JavaScript to be fired on the home page
-		
+	
     }
   },
   // About us page, note the change from about-us to about_us.
@@ -66,7 +62,7 @@ var Roots = {
 // Add additional events for more control over timing e.g. a finalize event
 var UTIL = {
   fire: function(func, funcname, args) {
-    var namespace = Roots;
+    var namespace = Krank;
     funcname = (funcname === undefined) ? 'init' : funcname;
     if (func !== '' && namespace[func] && typeof namespace[func][funcname] === 'function') {
       namespace[func][funcname](args);
