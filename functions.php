@@ -17,3 +17,6 @@ require_once locate_template('/lib/relative-urls.php');   // Root relative URLs
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+// Krank Extras
+require_once locate_template('/lib/custom-posts.php');    // Custom Posts
