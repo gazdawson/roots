@@ -1,3 +1,25 @@
+// Krank Scripts
+
+$(document).ready(function(){
+	
+	// Contact form info messaging
+	var cf_info = $('div.contact-form-info').text();
+	var cf_class = $('div.contact-form-info').attr('class');
+	if(cf_class === 'contact-form-info error') {
+		var cf_alert = '<div class="'+cf_class+' container"><i class="fa fa-info-circle"></i> '+cf_info+'<button class="close">&times;</button></div>';
+	}
+	else {
+		var cf_alert = '<div class="'+cf_class+' container"><i class="fa fa-check"></i> '+cf_info+'<button class="close">&times;</button></div>';
+	}
+	if(cf_info !== '') {
+		$('body').prepend(cf_alert).hide().slideDown();
+	}
+	$('div.contact-form-info .close').on('click',function(){
+		$('div.contact-form-info').slideUp().fadeOut('fast');
+	});
+	
+});
+
 /* ========================================================================
  * DOM-based Routing
  * Based on http://goo.gl/EUTi53 by Paul Irish
@@ -29,6 +51,7 @@ var Roots = {
   home: {
     init: function() {
       // JavaScript to be fired on the home page
+		
     }
   },
   // About us page, note the change from about-us to about_us.

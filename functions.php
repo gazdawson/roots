@@ -20,3 +20,4 @@ require_once locate_template('/lib/custom.php');          // Custom functions
 
 // Krank Extras
 require_once locate_template('/lib/custom-posts.php');    // Custom Posts
+require_once locate_template('/lib/contact-form.php');    // Contact Form
