@@ -5,6 +5,105 @@
  * Docs (https://github.com/ReduxFramework/ReduxFramework/wiki)
 */
 
+// General Options
+$this->sections[] = array(
+	'icon' => 'el-icon-cogs',
+	'title' => __('General Settings', 'redux-framework-demo'),
+	'fields' => array(
+		array(
+			'id'=>'name',
+			'type' => 'text',
+			'title' => __('Business Name', 'redux-framework-demo'),
+			'subtitle' => __('Please enter your business name', 'redux-framework-demo'),
+			'desc' => __('', 'redux-framework-demo'),
+			'default' => 'Business Name',
+			'class' => 'small-text'
+		),
+		array(
+			'id'=>'address',
+			'type' => 'text',
+			'title' => __('Address', 'redux-framework-demo'),
+			'subtitle' => __('Please enter your full address as you would like it to appear on the fron end.', 'redux-framework-demo'),
+			'desc' => __('', 'redux-framework-demo'),
+			'data' => 'post_type',
+			'options' => array(
+				'Address 1'=>'Address 1',
+				'Address 2'=>'Address 2',
+				'Town/City'=>'Town/City',
+				'State/County'=>'State/County',
+				'Zip/Post Code'=>'Zip/Post Code',
+				'Country'=>'Country'
+			),
+			'default' => array(
+				'Address 1'=>'',
+				'Address 2'=>'',
+				'Town/City'=>'',
+				'State/County'=>'',
+				'Zip/Post Code'=>'',
+				'Country'=>''
+			),
+			//'default' => array(1=>'Onee', 2=>'Twoo'),
+		),
+		array(
+			'id'=>'contact',
+			'type' => 'text',
+			'title' => __('Contact Info', 'redux-framework-demo'),
+			'subtitle' => __('Please enter your methods of contact below. Leave blank any methods you do not wish to be displayed on the site.', 'redux-framework-demo'),
+			'desc' => __('', 'redux-framework-demo'),
+			'data' => 'post_type',
+			'options' => array(
+				'Tel'=>'Telephone',
+				'Mob'=>'Mobile Tel',
+				'Fax'=>'Fax No',
+				'Email'=>'Email',
+				'Skype'=>'Skype'
+			),
+			'default' => array(
+				'Tel'=>'',
+				'Mob'=>'',
+				'Fax'=>'',
+				'Email'=>'',
+				'Skype'=>''
+			),
+			//'default' => array(1=>'Onee', 2=>'Twoo'),
+		),
+		array(
+			'id'=>'open',
+			'type' => 'text',
+			'title' => __('Opening Hours', 'redux-framework-demo'),
+			'subtitle' => __('Please enter your business hours', 'redux-framework-demo'),
+			'desc' => __('', 'redux-framework-demo'),
+			'data' => 'post_type',
+			'options' => array(
+				'Monday'=>'Monday',
+				'Tuesday'=>'Tuesday',
+				'Wednesday'=>'Wednesday',
+				'Thursday'=>'Thursday',
+				'Friday'=>'Friday',
+				'Saturday'=>'Saturday',
+				'Sunday'=>'Sunday'
+			),
+			'default' => array(
+				'Monday'=>'09:00 - 17:30',
+				'Tuesday'=>'09:00 - 17:30',
+				'Wednesday'=>'09:00 - 17:30',
+				'Thursday'=>'09:00 - 17:30',
+				'Friday'=>'09:00 - 17:30',
+				'Saturday'=>'09:00 - 17:30',
+				'Sunday'=>'09:00 - 16:00'
+			),
+		),
+	)
+);
+
+$this->sections[] = array(
+	'type' => 'divide',
+);
+
+/**
+	Sample Options Below
+**/
+
 $this->sections[] = array(
 	'title' => __('Home Settings', 'redux-framework-demo'),
 	'desc' => __('Redux Framework was created with the developer in mind. It allows for any theme developer to have an advanced theme panel with most of the features a developer would need. For more information check out the Github repo at: <a href="https://github.com/ReduxFramework/Redux-Framework">https://github.com/ReduxFramework/Redux-Framework</a>', 'redux-framework-demo'),

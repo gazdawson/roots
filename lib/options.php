@@ -337,27 +337,10 @@ if ( !class_exists( "Redux_Framework_sample_config" ) ) {
 
 			// SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.		
 			$this->args['share_icons'][] = array(
-			    'url' => 'https://github.com/ReduxFramework/ReduxFramework',
-			    'title' => 'Visit us on GitHub', 
-			    'icon' => 'el-icon-github'
-			    // 'img' => '', // You can use icon OR img. IMG needs to be a full URL.
-			);		
-			$this->args['share_icons'][] = array(
-			    'url' => 'https://www.facebook.com/pages/Redux-Framework/243141545850368',
-			    'title' => 'Like us on Facebook', 
-			    'icon' => 'el-icon-facebook'
-			);
-			$this->args['share_icons'][] = array(
-			    'url' => 'http://twitter.com/reduxframework',
-			    'title' => 'Follow us on Twitter', 
-			    'icon' => 'el-icon-twitter'
-			);
-			$this->args['share_icons'][] = array(
-			    'url' => 'http://www.linkedin.com/company/redux-framework',
-			    'title' => 'Find us on LinkedIn', 
+			    'url' => 'http://www.linkedin.com/pub/gareth-dawson/19/593/627',
+			    'title' => 'Follow Krank Creative on LinkedIn', 
 			    'icon' => 'el-icon-linkedin'
 			);
-
 			
 	 
 			// Panel Intro text -> before the form
@@ -367,13 +350,13 @@ if ( !class_exists( "Redux_Framework_sample_config" ) ) {
 				} else {
 					$v = str_replace("-", "_", $this->args['opt_name']);
 				}
-				$this->args['intro_text'] = sprintf( __('<p>Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'redux-framework-demo' ), $v );
+				$this->args['intro_text'] = sprintf( __('<p>Welcome to Krank Theme options. Change these options to customise your site.</p>', 'redux-framework-demo' ), $v );
 			} else {
-				$this->args['intro_text'] = __('<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'redux-framework-demo');
+				$this->args['intro_text'] = __('', 'redux-framework-demo');
 			}
 
 			// Add content after the form.
-			$this->args['footer_text'] = __('<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'redux-framework-demo');
+			$this->args['footer_text'] = __('', 'redux-framework-demo');
 
 		}
 	}
