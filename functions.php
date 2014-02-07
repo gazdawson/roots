@@ -21,6 +21,7 @@ require_once locate_template('/lib/custom.php');          // Custom functions
 // Krank Extras
 require_once locate_template('/lib/custom-posts.php');    // Custom Posts
 require_once locate_template('/lib/contact-form.php');    // Contact Form
+require_once locate_template('/lib/shortcodes.php');      // Added Shortcodes
 
 // Krank Options Powered by Redux Framework (http://reduxframework.com/docs/)
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' ) ) {
