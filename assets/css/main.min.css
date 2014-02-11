@@ -5962,6 +5962,60 @@ fieldset[disabled] .contact-form .contact-submit .btn.active {
 #contact-modal .modal-dialog .modal-content .close {
   color: #fff;
 }
+.short-address ul.address {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.short-address ul.address li.name {
+  font-weight: bold;
+}
+.short-contact dl.contact dt {
+  float: left;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.short-contact dl.contact:after:before,
+.short-contact dl.contact:after:after {
+  content: " ";
+  display: table;
+}
+.short-contact dl.contact:after:after {
+  clear: both;
+}
+.short-contact dl.contact:after:before,
+.short-contact dl.contact:after:after {
+  content: " ";
+  display: table;
+}
+.short-contact dl.contact:after:after {
+  clear: both;
+}
+.short-open .open-hours {
+  width: 200px;
+}
+.short-open dl.open-hours dt {
+  float: left;
+}
+.short-open dl.open-hours dd {
+  text-align: right;
+}
+.short-open dl.open-hours:after:before,
+.short-open dl.open-hours:after:after {
+  content: " ";
+  display: table;
+}
+.short-open dl.open-hours:after:after {
+  clear: both;
+}
+.short-open dl.open-hours:after:before,
+.short-open dl.open-hours:after:after {
+  content: " ";
+  display: table;
+}
+.short-open dl.open-hours:after:after {
+  clear: both;
+}
 .aligncenter {
   display: block;
   margin: 0 auto;

@@ -10,15 +10,17 @@ $this->sections[] = array(
 	'icon' => 'el-icon-cogs',
 	'title' => __('General Settings', 'redux-framework-demo'),
 	'fields' => array(
+		// Business Name
 		array(
 			'id'=>'name',
 			'type' => 'text',
 			'title' => __('Business Name', 'redux-framework-demo'),
 			'subtitle' => __('Please enter your business name', 'redux-framework-demo'),
 			'desc' => __('', 'redux-framework-demo'),
-			'default' => 'Business Name',
+			'default' => '',
 			'class' => 'small-text'
 		),
+		// Business Address
 		array(
 			'id'=>'address',
 			'type' => 'text',
@@ -27,23 +29,38 @@ $this->sections[] = array(
 			'desc' => __('', 'redux-framework-demo'),
 			'data' => 'post_type',
 			'options' => array(
-				'Address 1'=>'Address 1',
-				'Address 2'=>'Address 2',
-				'Town/City'=>'Town/City',
-				'State/County'=>'State/County',
-				'Zip/Post Code'=>'Zip/Post Code',
-				'Country'=>'Country'
+				'streetAddress'=>'Address 1',
+				'addressLocality'=>'Town/City',
+				'addressRegion'=>'State/County',
+				'postalCode'=>'Zip/Post Code',
+				'addressCountry'=>'Country'
 			),
 			'default' => array(
-				'Address 1'=>'',
-				'Address 2'=>'',
-				'Town/City'=>'',
-				'State/County'=>'',
-				'Zip/Post Code'=>'',
-				'Country'=>''
+				'streetAddress'=>'',
+				'addressLocality'=>'',
+				'addressRegion'=>'',
+				'postalCode'=>'',
+				'addressCountry'=>''
 			),
-			//'default' => array(1=>'Onee', 2=>'Twoo'),
 		),
+		// Business Location
+		array(
+			'id'=>'location',
+			'type' => 'text',
+			'title' => __('Location', 'redux-framework-demo'),
+			'subtitle' => __('Please enter the Latitude and Logitude for your exact location.', 'redux-framework-demo'),
+			'desc' => __('', 'redux-framework-demo'),
+			'data' => 'post_type',
+			'options' => array(
+				'latitude'=>'Latitude',
+				'longitude'=>'Longitude'
+			),
+			'default' => array(
+				'latitude'=>'',
+				'longitude'=>''
+			),
+		),
+		// Business Contact
 		array(
 			'id'=>'contact',
 			'type' => 'text',
@@ -52,21 +69,17 @@ $this->sections[] = array(
 			'desc' => __('', 'redux-framework-demo'),
 			'data' => 'post_type',
 			'options' => array(
-				'Tel'=>'Telephone',
-				'Mob'=>'Mobile Tel',
-				'Fax'=>'Fax No',
-				'Email'=>'Email',
-				'Skype'=>'Skype'
+				'telephone'=>'Telephone',
+				'faxNumber'=>'Fax No',
+				'email'=>'Email'
 			),
 			'default' => array(
-				'Tel'=>'',
-				'Mob'=>'',
-				'Fax'=>'',
-				'Email'=>'',
-				'Skype'=>''
+				'telephone'=>'',
+				'faxNumber'=>'',
+				'email'=>''
 			),
-			//'default' => array(1=>'Onee', 2=>'Twoo'),
 		),
+		// Business Open Hours
 		array(
 			'id'=>'open',
 			'type' => 'text',
